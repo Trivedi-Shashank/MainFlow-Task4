@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Main Flow Web Development - Task 4</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <style>
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f5f5f5;
+ }
+
+ header {
+   background-color: #003366;
+   color: #ffffff;
+   padding: 1em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ header h1 {
+   margin: 0;
+ }
+
+ #menu-icon {
+   display: block;
+   cursor: pointer;
+   font-size: 2rem;
+ }
+
+ p {
+   color: #333333;
+ }
+
+ .button {
+  display: inline-block;
+  background-color: #eeeeee;
+  color: #003366;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  transition: background-color 0.2s ease;
+}
+ .button-container {
+   display: none;
+ }
+.button:hover {
+  color: #eeeeee;
+  background-color: #003366;
+}
+ .section {
+   background-color: #eeeeee;
+   padding: 2em;
+   margin: 1em;
+   border-radius: 5px;
+ }
+
+ .section:first-child {
+   margin-top: 0;
+ }
+
+ .section-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1em;
+ }
+
+ .section-header h2 {
+   color: #003366;
+   margin: 0;
+ }
+
+ .section-header a {
+   color: #00336
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Main Flow Web Development - Task 4</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <style>
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f5f5f5;
+ }
+
+ header {
+   background-color: #003366;
+   color: #ffffff;
+   padding: 1em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ header h1 {
+   margin: 0;
+ }
+
+ #menu-icon {
+   display: block;
+   cursor: pointer;
+   font-size: 2rem;
+ }
+
+ p {
+   color: #333333;
+ }
+
+ .button-container {
+   display: none;
+ }
+
+ .section {
+   background-color: #f5f5f5;
+   padding: 2em;
+   margin: 1em;
+   border-radius: 5px;
+ }
+
+ .section:first-child {
+   margin-top: 0;
+ }
+
+ .section-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1em;
+ }
+
+ .section-header h2 {
+   color: #003366;
+   margin: 0;
+ }
+
+ .section-header a {
+   color: #003366;
+   text-decoration: none;
+ }
+
+ .section-content {
+   margin-left: 2em;
+ }
+
+ #about-me {
+   background-color: #eeeeee;
+ }
+
+ a {
+   color: #003366;
+ }
+
+ @media (min-width: 768px) {
+   .button-container {
+     display: block;
+   }
+
+   #menu-icon {
+     display: none;
+   }
+ }
+ </style>
+</head>
+<body>
+ <header>
+   <div style="flex-grow: 1; text-align: center;">
+     <h1>Main Flow Web Development - Task 4</h1>
+   </div>
+   <div id="menu-icon">☰</div>
+   <div class="button-container">
+     <a href="#about-me" class="button">About Me</a>
+     <a href="#academics" class="button">Academics</a>
+     <a href="#achievements" class="button">Achievements</a>
+     <a href="#skills" class="button">Skills</a>
+     <a href="#hobbies" class="button">Hobbies</a>
+     <a href="#socials" class="button">Socials</a>
+     <a href="#todo" class="button">To-Do List</a>
+   </div>
+ </header>
+ <section id="about-me" class="section">
+   <div class="section-header">
+     <h2>About Me</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="academics" class="section">
+   <div class="section-header">
+     <h2>Academics</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="achievements" class="section">
+   <div class="section-header">
+     <h2>Achievements</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="skills" class="section">
+   <div class="section-header">
+     <h2>Skills</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="hobbies" class="section">
+   <div class="section-header">
+     <h2>Hobbies</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="socials" class="section">
+   <div class="section-header">
+     <h2>Socials</h2>
+   </div>
+   <div class="section-content">
+     <p>...</p>
+   </div>
+ </section>
+ <section id="todo" class="section">
+   <div class="section-header">
+     <h2>To-Do List</h2>
+   </div>
+   <div class="section-content">
+     <input type="text" id="todo-input" placeholder="Add a new task here...">
+     <ul id="todo-list">
+     </ul>
+     <span id="task-count">0 tasks</span>
+   </div>
+ </section>
+ <script>
+  document.getElementById("menu-icon").addEventListener("click", function() {
+    const buttonContainer = document.querySelector(".button-container");
+    if (buttonContainer.style.display === "block") {
+      buttonContainer.style.display = "none";
+    } else {
+      buttonContainer.style.display = "block";
+    }
+  });
+  
+  document.querySelectorAll(".button").forEach(function(button) {
+    button.addEventListener("click", function() {
+      const buttonContainer = document.querySelector(".button-container");
+      buttonContainer.style.display = "none";
+    });
+  });
+  
+  document.getElementById("todo-input").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      addTask();
+    }
+  });
+  
+  function addTask() {
+    const taskText = document.getElementById("todo-input").value;
+    if (!taskText) return;
+  
+    const taskItem = document.createElement("li");
+    taskItem.id = "todo-item";
+    taskItem.innerHTML = `<span>${taskText}</span> <button class="delete-btn"><i class="fas fa-trash"></i></button>`;
+  
+    document.getElementById("todo-list").appendChild(taskItem);
+    document.getElementById("todo-input").value = "";
+  
+    const taskCount = document.getElementById("task-count");
+    taskCount.textContent = parseInt(taskCount.textContent) + 1;
+  
+    const deleteBtns = document.querySelectorAll(".delete-btn");
+    deleteBtns.forEach(function(deleteBtn) {
+      deleteBtn.addEventListener("click", function() {
+        const taskItem = this.parentNode;
+        taskItem.remove();
+  
+        const taskCount = document.getElementById("task-count");
+        taskCount.textContent = parseInt(taskCount.textContent) - 1;
+      });
+    });
+  }
+  </script>
+</body>
+</html>
